@@ -98,6 +98,15 @@ document.querySelector("#div1").addEventListener("mouseleave", ()=>{
 })
 
 
+gsap.to("#page2-svgpart svg",{
+  rotate:`1000deg`,
+  scrollTrigger:{
+    trigger:"#page2",
+    scroller:"#main",
+    markers:true,
+    scrub:2
+  }
+})
 gsap.to(".page3-div1-p1",{
   left:0,
   // duration:1.5,
@@ -131,7 +140,7 @@ gsap.to(".anim7",{
   scrollTrigger:{
     trigger:"#page5",
     scroller:"#main",
-    markers:true,
+    // markers:true,
     start:"top 10%",
     end:"top -100%",
     scrub:2
@@ -142,9 +151,12 @@ gsap.to(".anim8",{
   scrollTrigger:{
     trigger:"#page5",
     scroller:"#main",
-    markers:true,
+    // markers:true,
     start:"top 10%",
     end:"top -100%",
     scrub:2
   }
 })
+
+  
+

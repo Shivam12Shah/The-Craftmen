@@ -21,6 +21,7 @@ html, body{
 #main{
     position: relative;
     background-color: #000000;
+    /* padding: 0px 10px; */
 }
 #hero{
     width: 100vw;
@@ -34,7 +35,7 @@ html, body{
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    margin: 5% 0%;
+    padding: 50px 0px;
     color: #808080;
 }
 #logo svg{
@@ -449,10 +450,6 @@ html, body{
     position: absolute;
     object-fit: cover;
     object-position: center;
-    animation-name: roat;
-    animation-duration: 8s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
 }
 #page2-svgpart i{
     color: #A5A1FF;
@@ -556,6 +553,13 @@ html, body{
     flex-direction: column;
     /* align-items: center; */
     /* justify-content: center; */
+    transition: all ease 0.4s;
+}
+#page4-p1:hover{
+    scale: 0.97;
+}
+.p2:hover{
+    scale: 0.97;
 }
 #page4-p1 .p1-top{
     width: 100%;
@@ -606,6 +610,7 @@ html, body{
     display: flex;
     flex-direction: column;
     border-radius: 50px;
+    transition: all ease 0.4s;
 }
 .p2 .p2-center{
     width: 280px;
@@ -785,7 +790,87 @@ html, body{
 }
 #page6{
     width: 100%;
-    height: 100vh;
+    height: 130vh;
     background-color: green;
+    padding: 0px 10px;
     
+}
+#page6-inner{
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    background-color:#1D1C16;
+    border-radius: 50px;
+}
+#page6-inner h3{
+    text-transform: uppercase;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #FFF480;
+}
+#page6-inner h1{
+    font-size: 6vw;
+    line-height: 6vw;
+    margin-top: 3vw;
+    font-weight: 400;
+    color: #FFF480;
+}
+.contact{
+    margin-top: 8vw;
+    display: flex;
+    gap: 1vw;
+}
+.contact1{
+    width: 300px;
+    height: 70px;
+    /* background-color: red; */
+    overflow: hidden;
+    border-radius: 50px;
+    /* overflow: hidden; */
+    border: 2px solid #FFF480;
+    /* transition: all ease 0.4s; */
+    position: relative;
+}
+.contact1 h4{
+    width: 100%;
+    height: 100%;
+    /* background-color: green; */
+    text-align: center;
+    padding-top: 22px;
+    transition: all ease-in-out .4s;
+    position: relative;
+    z-index: 999;
+    color: #FFF480;
+    font-weight: 500;
+    
+}
+.contact1 h4:nth-last-child(2){
+    color: #000000;
+}
+.contact1:hover h4{
+    transform: translateY(-100%);
+}
+
+.contact-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #FFF480;
+    top: -300%;
+    position: relative;
+    transition: all ease 0.4s;
+    z-index: 0;
+
+}
+.contact1:hover .contact-overlay{
+    transform: translateY(100%);
+}
+.contact-p2{
+    width: 200px;
+    height: 70px;
+}
+.contact1 i{
+    font-size: 26px;
+
+}
+.contact-p1{
+    margin-top: 2vw;
 }
