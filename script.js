@@ -99,11 +99,11 @@ document.querySelector("#div1").addEventListener("mouseleave", ()=>{
 
 
 gsap.to("#page2-svgpart svg",{
-  rotate:`1000deg`,
+  rotate:`360deg`,
   scrollTrigger:{
     trigger:"#page2",
     scroller:"#main",
-    markers:true,
+    // markers:true,
     scrub:2
   }
 })
@@ -158,5 +158,14 @@ gsap.to(".anim8",{
   }
 })
 
+gsap.to("#rotater svg",{
+  rotate:`360deg`,
+  scrollTrigger:{
+    trigger:"#page6",
+    scroller:"#main",
+    markers:true,
+    scrub:2
+  }
+})
   
 
