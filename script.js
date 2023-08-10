@@ -167,5 +167,72 @@ gsap.to("#rotater svg",{
     scrub:2
   }
 })
-  
+
+document.querySelector(".animate1").addEventListener("mouseenter",()=>{
+  // document.querySelector("#Co").style.top = `0%`
+  // document.querySelector(".overlay1").style.width = `100%`
+  document.querySelector(".overlay1").style.height = `100%`
+})
+document.querySelector(".animate1").addEventListener("mouseleave",()=>{
+  // document.querySelector(".overlay1").style.width = `0%`
+  document.querySelector(".overlay1").style.height = `0%`
+  document.querySelector(".overlay1").style.top = `100%`
+  setTimeout(()=>{
+  document.querySelector(".overlay1").style.top = `0%`
+  },200)
+})
+
+document.querySelector(".animate2").addEventListener("mouseenter",()=>{
+  // document.querySelector("#Co").style.top = `0%`
+  // document.querySelector(".overlay2").style.width = `100%`
+  document.querySelector(".overlay2").style.height = `100%`
+})
+document.querySelector(".animate2").addEventListener("mouseleave",()=>{
+  // document.querySelector(".overlay2").style.width = `0%`
+  document.querySelector(".overlay2").style.height = `0%`
+  document.querySelector(".overlay2").style.top = `100%`
+  setTimeout(()=>{
+  document.querySelector(".overlay2").style.top = `0%`
+  },200)
+})
+document.querySelector(".animate3").addEventListener("mouseenter",()=>{
+  // document.querySelector("#Co").style.top = `0%`
+  // document.querySelector(".overlay3").style.width = `100%`
+  document.querySelector(".overlay3").style.height = `100%`
+})
+document.querySelector(".animate3").addEventListener("mouseleave",()=>{
+  // document.querySelector(".overlay3").style.width = `0%`
+  document.querySelector(".overlay3").style.height = `0%`
+  document.querySelector(".overlay3").style.top = `100%`
+  setTimeout(()=>{
+  document.querySelector(".overlay3").style.top = `0%`
+  },200)
+})
+document.querySelector(".animate4").addEventListener("mouseenter",()=>{
+  // document.querySelector("#Co").style.top = `0%`
+  // document.querySelector(".overlay4").style.width = `100%`
+  document.querySelector(".overlay4").style.height = `100%`
+})
+document.querySelector(".animate4").addEventListener("mouseleave",()=>{
+  // document.querySelector(".overlay4").style.width = `0%`
+  document.querySelector(".overlay4").style.height = `0%`
+  document.querySelector(".overlay4").style.top = `100%`
+  setTimeout(()=>{
+  document.querySelector(".overlay4").style.top = `0%`
+  },200)
+})
+document.querySelector(".animate5").addEventListener("mouseenter",()=>{
+  // document.querySelector("#Co").style.top = `0%`
+  // document.querySelector(".overlay5").style.width = `100%`
+  document.querySelector(".overlay5").style.height = `100%`
+})
+document.querySelector(".animate5").addEventListener("mouseleave",()=>{
+  // document.querySelector(".overlay5").style.width = `0%`
+  document.querySelector(".overlay5").style.height = `0%`
+  document.querySelector(".overlay5").style.top = `100%`
+  setTimeout(()=>{
+  document.querySelector(".overlay5").style.top = `0%`
+  },200)
+})
+
 
